@@ -1,0 +1,38 @@
+/* https: //images.unsplash.com/photo-1569227965377-4de6e2c9c8a1?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OHx8YmVhdXRpZnVsJTIwc2NlbmFyeXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60;; */
+/* #434a56 */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.board {
+  background: rgba(0, 0, 0, 0.582);
+  width: 50%;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: repeat(36, 1fr);
+  grid-template-rows: repeat(36, 1fr);
+}
+
+.snake {
+  width: 100%;
+  height: 100%;
+  background: blue;
+}
+.food {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: purple;
+  border-radius: 50%;
+}
